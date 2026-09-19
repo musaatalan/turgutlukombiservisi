@@ -935,7 +935,7 @@ a:hover {
   height: 1.55rem;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 769px) {
   .fab-wa {
     display: grid;
   }
@@ -994,7 +994,7 @@ a:hover {
   fill: currentColor;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 768px) {
   .sticky-cta {
     display: flex;
   }
