@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://turgutlukombiservisi.com/hizmetler/kombi-tamiri.html">
-  <meta name="robots" content="index, follow">
-  <title>Turgutlu Kombi Tamiri | Atalan Teknik — Yerinde Arıza Servisi</title>
-  <meta name="description" content="Turgutlu kombi tamiri: hata kodu, ateşleme, basınç ve elektronik kart arızalarında yerinde servis. Atalan Teknik — 0507 032 65 76.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <title>Turgutlu Kombi Tamiri | Yerinde Arıza Servisi — Atalan Teknik</title>
+  <meta name="description" content="Turgutlu kombi tamiri: hata kodu, ateşleme, basınç, elektronik kart arızalarında yerinde servis. Aynı gün müdahale. Atalan Teknik — 0507 032 65 76.">
   <meta name="theme-color" content="#12141a">
+  <meta name="geo.region" content="TR-45">
+  <meta name="geo.placename" content="Turgutlu, Manisa">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:url" content="https://turgutlukombiservisi.com/hizmetler/kombi-tamiri.html">
@@ -22,24 +24,56 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Turgutlu Kombi Tamiri",
-    "serviceType": "Kombi tamiri ve arıza giderme",
-    "provider": {
-      "@type": "HVACBusiness",
-      "name": "Atalan Teknik",
-      "telephone": "+905070326576",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C",
-        "addressLocality": "Turgutlu",
-        "addressRegion": "Manisa",
-        "postalCode": "45400",
-        "addressCountry": "TR"
+    "@graph": [
+      {
+        "@type": "HVACBusiness",
+        "@id": "https://turgutlukombiservisi.com/#business",
+        "name": "Turgutlu Kombi Servisi — Atalan Teknik",
+        "telephone": "+905070326576",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C",
+          "addressLocality": "Turgutlu",
+          "addressRegion": "Manisa",
+          "postalCode": "45400",
+          "addressCountry": "TR"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Turgutlu" },
+          { "@type": "AdministrativeArea", "name": "Manisa" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Turgutlu Kombi Tamiri",
+        "serviceType": "Kombi tamiri ve arıza giderme",
+        "provider": { "@id": "https://turgutlukombiservisi.com/#business" },
+        "areaServed": { "@type": "City", "name": "Turgutlu" },
+        "url": "https://turgutlukombiservisi.com/hizmetler/kombi-tamiri.html",
+        "description": "Turgutlu’da yerinde kombi tamiri: hata kodu, ateşleme, basınç ve elektronik kart arızaları."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Turgutlu’da kombi tamiri ne kadar sürer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basit arızalarda çoğu zaman aynı ziyarette çözüm sağlanır. Parça gereken durumlarda tedarik süresine göre planlanır; süreç önceden anlatılır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hangi markalara kombi tamiri yapıyorsunuz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Demirdöküm, E.C.A., Baymak, Vaillant, Bosch, Buderus ve piyasadaki çoğu markada yerinde servis sunuyoruz."
+            }
+          }
+        ]
       }
-    },
-    "areaServed": { "@type": "City", "name": "Turgutlu" },
-    "url": "https://turgutlukombiservisi.com/hizmetler/kombi-tamiri.html"
+    ]
   }
   </script>
 </head>
@@ -53,7 +87,7 @@
       </a>
       <ul class="nav__links">
         <li><a href="/#hizmetler">Hizmetler</a></li>
-        <li><a href="/#sss">SSS</a></li>
+        <li><a href="/#markalar">Markalar</a></li>
         <li><a href="/#iletisim">İletişim</a></li>
       </ul>
       <a class="btn btn--ember nav__cta" href="tel:05070326576">0507 032 65 76</a>
@@ -72,47 +106,102 @@
   <main id="icerik">
     <header class="page-hero">
       <div class="wrap">
+        <nav class="breadcrumb" aria-label="Sayfa yolu">
+          <a href="/">Ana sayfa</a><span aria-hidden="true">/</span>
+          <a href="/#hizmetler">Hizmetler</a><span aria-hidden="true">/</span>
+          <span>Kombi tamiri</span>
+        </nav>
         <p class="section__eyebrow">Hizmet</p>
         <h1>Turgutlu kombi tamiri</h1>
-        <p>Yerinde arıza tespiti ve onarım — hata kodundan elektronik karta kadar.</p>
+        <p>Yerinde arıza tespiti ve onarım — hata kodundan elektronik karta kadar. Aynı gün servis imkânı.</p>
+        <div class="page-hero__actions">
+          <a class="btn btn--ember" href="tel:05070326576">Hemen ara: 0507 032 65 76</a>
+          <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20tamiri%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+        <p class="page-hero__meta"><strong>Adres:</strong> Yılmazlar Mah. Türkoğlu Sk. No: 3/C, Turgutlu / Manisa</p>
       </div>
     </header>
 
     <section class="section">
-      <div class="wrap prose">
-        <p>Kombi birden söndü, ekranda hata kodu mu var, sıcak su gelmiyor mu? <strong>Atalan Teknik</strong> olarak Turgutlu içinde yerinde kombi tamiri sunuyoruz. Önce arızayı netleştirir, onayınızla onarıma geçeriz.</p>
+      <div class="wrap prose prose--wide">
+        <p>Kombi birden söndü, ekranda hata kodu mu var, sıcak su gelmiyor mu? <strong>Atalan Teknik</strong> olarak Manisa / Turgutlu’da yerinde <strong>kombi tamiri</strong> sunuyoruz. Önce arızayı netleştirir, onayınızla onarıma geçeriz — sürpriz ücret yok.</p>
 
-        <h2>Sık görülen arızalar</h2>
+        <h2>Sık görülen kombi arızaları</h2>
         <ul>
-          <li>Ateşleme / ignisyon sorunları</li>
-          <li>Basınç düşmesi ve kaçak şüphesi</li>
-          <li>Elektronik kart ve sensör arızaları</li>
+          <li>Ateşleme / ignisyon sorunları ve alev kaybı</li>
+          <li>Basınç düşmesi, kaçak şüphesi, sürekli su ekleme</li>
+          <li>Elektronik kart, NTC sensör ve kablo arızaları</li>
           <li>Pompa, üç yollu vana, genleşme tankı</li>
-          <li>Yoğuşmalı kombilerde fan / baca sensörü</li>
+          <li>Yoğuşmalı kombilerde fan / baca / basınç anahtarı</li>
+          <li>Sıcak suyun kesik gelmesi veya hiç gelmemesi</li>
+        </ul>
+
+        <h2>Marka bazlı servis</h2>
+        <p>Arızanız markaya özel kodlarla geliyorsa ilgili sayfamıza da bakabilirsiniz:</p>
+        <ul class="related-links">
+          <li><a href="/markalar/demirdokum.html">Demirdöküm</a></li>
+          <li><a href="/markalar/eca.html">E.C.A.</a></li>
+          <li><a href="/markalar/baymak.html">Baymak</a></li>
+          <li><a href="/markalar/vaillant.html">Vaillant</a></li>
+          <li><a href="/markalar/bosch.html">Bosch</a></li>
+          <li><a href="/markalar/buderus.html">Buderus</a></li>
         </ul>
 
         <h2>Nasıl ilerliyoruz?</h2>
-        <p>Telefon veya WhatsApp ile model ve hata kodunu iletin. Randevu sonrası adresinizde keşif yapılır; parça gerekiyorsa seçenekler ve fiyat önceden anlatılır. Onayınız olmadan işlem yapılmaz.</p>
+        <ol>
+          <li>Telefon veya WhatsApp ile model ve hata kodunu iletin.</li>
+          <li>Uygun saatte Turgutlu adresinize randevu planlanır.</li>
+          <li>Keşif sonrası fiyat netleşir; onayınızla onarım yapılır.</li>
+          <li>Çalışma testi ve işçilik güvencesi ile teslim.</li>
+        </ol>
 
         <h2>Hizmet bölgesi</h2>
-        <p>Turgutlu merkez, mahalleler ve çevre köyler. İşyerimiz: Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C.</p>
+        <p>Turgutlu merkez, mahalleler ve çevre köyler. İşyerimiz: <strong>Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C</strong>. Manisa çevresi randevu ile.</p>
 
-        <p style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
-          <a class="btn btn--ember" href="tel:05070326576">Hemen ara</a>
-          <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20tamiri%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a class="btn btn--outline" href="/">Ana sayfa</a>
-        </p>
+        <h2>Sıkça sorulanlar</h2>
+        <div class="faq">
+          <details open>
+            <summary>Turgutlu’da kombi tamiri ne kadar sürer?</summary>
+            <p>Basit arızalarda çoğu zaman aynı ziyarette çözüm sağlanır. Parça gereken durumlarda tedarik süresine göre planlanır.</p>
+          </details>
+          <details>
+            <summary>Fiyatı önceden öğrenebilir miyim?</summary>
+            <p>Telefonda ön bilgi verilir; kesin tutar yerinde tespitten sonra onayınıza sunulur.</p>
+          </details>
+        </div>
+
+        <div class="cta-panel">
+          <h2>Kombi arızası mı var?</h2>
+          <p>Turgutlu içi kombi tamiri için hemen arayın veya WhatsApp’tan yazın.</p>
+          <div class="cta-panel__actions">
+            <a class="btn btn--ember" href="tel:05070326576">0507 032 65 76</a>
+            <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20tamiri%20laz%C4%B1m." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn--ghost" href="/hizmetler/acil-kombi-servisi.html">Acil servis</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p class="footer__meta"><a class="footer__brand" href="/">Atalan Teknik</a><br>Turgutlu kombi tamiri · <a href="tel:05070326576">0507 032 65 76</a></p>
+      <p class="footer__meta"><a class="footer__brand" href="/">Atalan Teknik</a><br>Turgutlu kombi tamiri · Yılmazlar Mah. Türkoğlu Sk. No: 3/C · <a href="tel:05070326576">0507 032 65 76</a></p>
       <p class="footer__copy">© 2026 Atalan Teknik</p>
     </div>
   </footer>
-  <a class="fab-wa" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20tamiri%20i%C3%A7in%20bilgi%20alabilir%20miyim?" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20zm4.7-5.9c-.3-.1-1.5-.8-1.8-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.2-.5 0-.2 0-.3-.1-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 2.6 1.1 2.6.7 3.1.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg></a>
+  <a class="fab-wa" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20tamiri%20i%C3%A7in%20bilgi%20alabilir%20miyim?" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yazın">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20zm4.7-5.9c-.3-.1-1.5-.8-1.8-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.2-.5 0-.2 0-.3-.1-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 2.6 1.1 2.6.7 3.1.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+  <div class="sticky-cta" role="navigation" aria-label="Hızlı iletişim">
+    <a class="sticky-cta__wa" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20tamiri%20laz%C4%B1m." target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20zm4.7-5.9c-.3-.1-1.5-.8-1.8-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.2-.5 0-.2 0-.3-.1-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 2.6 1.1 2.6.7 3.1.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+      WhatsApp
+    </a>
+    <a class="sticky-cta__call" href="tel:05070326576">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+      Hemen Ara
+    </a>
+  </div>
   <script src="/js/site.js" defer></script>
 </body>
 </html>

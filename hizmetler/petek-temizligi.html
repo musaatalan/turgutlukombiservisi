@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://turgutlukombiservisi.com/hizmetler/petek-temizligi.html">
-  <meta name="robots" content="index, follow">
-  <title>Turgutlu Petek Temizliği | Atalan Teknik — Tesisat Temizliği</title>
-  <meta name="description" content="Turgutlu petek temizliği ve tesisat temizliği. Soğuk kalan petekler, düşük ısınma. Atalan Teknik — 0507 032 65 76.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <title>Turgutlu Petek Temizliği | Tesisat Temizliği — Atalan Teknik</title>
+  <meta name="description" content="Turgutlu petek temizliği ve tesisat temizliği. Soğuk kalan petekler, düşük ısınma, yakıt israfı. Atalan Teknik — 0507 032 65 76.">
   <meta name="theme-color" content="#12141a">
+  <meta name="geo.region" content="TR-45">
+  <meta name="geo.placename" content="Turgutlu, Manisa">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:url" content="https://turgutlukombiservisi.com/hizmetler/petek-temizligi.html">
@@ -22,24 +24,31 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Turgutlu Petek Temizliği",
-    "serviceType": "Petek ve tesisat temizliği",
-    "provider": {
-      "@type": "HVACBusiness",
-      "name": "Atalan Teknik",
-      "telephone": "+905070326576",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C",
-        "addressLocality": "Turgutlu",
-        "addressRegion": "Manisa",
-        "postalCode": "45400",
-        "addressCountry": "TR"
+    "@graph": [
+      {
+        "@type": "HVACBusiness",
+        "@id": "https://turgutlukombiservisi.com/#business",
+        "name": "Turgutlu Kombi Servisi — Atalan Teknik",
+        "telephone": "+905070326576",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C",
+          "addressLocality": "Turgutlu",
+          "addressRegion": "Manisa",
+          "postalCode": "45400",
+          "addressCountry": "TR"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Turgutlu Petek Temizliği",
+        "serviceType": "Petek ve tesisat temizliği",
+        "provider": { "@id": "https://turgutlukombiservisi.com/#business" },
+        "areaServed": { "@type": "City", "name": "Turgutlu" },
+        "url": "https://turgutlukombiservisi.com/hizmetler/petek-temizligi.html",
+        "description": "Turgutlu’da makineli ve ilaçlı petek / tesisat temizliği; homojen ısınma ve yakıt tasarrufu."
       }
-    },
-    "areaServed": { "@type": "City", "name": "Turgutlu" },
-    "url": "https://turgutlukombiservisi.com/hizmetler/petek-temizligi.html"
+    ]
   }
   </script>
 </head>
@@ -53,7 +62,7 @@
       </a>
       <ul class="nav__links">
         <li><a href="/#hizmetler">Hizmetler</a></li>
-        <li><a href="/#sss">SSS</a></li>
+        <li><a href="/#markalar">Markalar</a></li>
         <li><a href="/#iletisim">İletişim</a></li>
       </ul>
       <a class="btn btn--ember nav__cta" href="tel:05070326576">0507 032 65 76</a>
@@ -72,35 +81,52 @@
   <main id="icerik">
     <header class="page-hero">
       <div class="wrap">
+        <nav class="breadcrumb" aria-label="Sayfa yolu">
+          <a href="/">Ana sayfa</a><span aria-hidden="true">/</span>
+          <a href="/#hizmetler">Hizmetler</a><span aria-hidden="true">/</span>
+          <span>Petek temizliği</span>
+        </nav>
         <p class="section__eyebrow">Hizmet</p>
         <h1>Turgutlu petek temizliği</h1>
-        <p>Tıkanmış tesisat ve soğuk petekler için makineli / ilaçlı temizlik.</p>
+        <p>Tıkanmış tesisat ve soğuk petekler için makineli / ilaçlı temizlik — daha homojen ısınma.</p>
+        <div class="page-hero__actions">
+          <a class="btn btn--ember" href="tel:05070326576">Hemen ara: 0507 032 65 76</a>
+          <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba,%20petek%20temizli%C4%9Fi%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+        <p class="page-hero__meta"><strong>Adres:</strong> Yılmazlar Mah. Türkoğlu Sk. No: 3/C, Turgutlu / Manisa</p>
       </div>
     </header>
 
     <section class="section">
-      <div class="wrap prose">
-        <p>Peteklerin bir kısmı soğuk kalıyorsa, ev yeterince ısınmıyorsa veya kombi sürekli çalışıyor ama verim düşükse sebep tesisattaki kireç ve tortu olabilir. <strong>Atalan Teknik</strong> Turgutlu’da petek ve tesisat temizliği hizmeti verir.</p>
+      <div class="wrap prose prose--wide">
+        <p>Peteklerin bir kısmı soğuk kalıyorsa, ev yeterince ısınmıyorsa veya kombi sürekli çalışıyor ama verim düşükse sebep tesisattaki kireç ve tortu olabilir. <strong>Atalan Teknik</strong> Turgutlu’da <strong>petek ve tesisat temizliği</strong> hizmeti verir.</p>
 
-        <h2>Ne zaman gerekir?</h2>
+        <h2>Ne zaman petek temizliği gerekir?</h2>
         <ul>
           <li>Peteklerin üstü sıcak, altı soğuk</li>
           <li>Odalar arasında belirgin ısı farkı</li>
           <li>Kombi yüksek ayarda bile yetersiz ısınma</li>
           <li>Uzun süredir temizlik yapılmamış sistemler</li>
+          <li>Pompa sesi / yüksek enerji tüketimi şikâyeti</li>
         </ul>
+
+        <h2>Nasıl yapılır?</h2>
+        <p>Sistem durumuna göre makineli ve/veya ilaçlı temizlik planlanır. Öncesinde kombi ve tesisat genel kontrolü yapılır; gerekirse <a href="/hizmetler/kombi-bakimi.html">kombi bakımı</a> ile birlikte önerilir.</p>
 
         <h2>Ne sıklıkla?</h2>
         <p>Ortalama 2–3 yılda bir önerilir. Belirtiler varsa beklemeden kontrol ettirmek daha doğrudur.</p>
 
-        <h2>Randevu alın</h2>
-        <p>Telefon veya WhatsApp ile adres ve petek sayısını iletin; uygun gün için planlayalım.</p>
+        <h2>Turgutlu hizmet alanı</h2>
+        <p>Turgutlu merkez, mahalleler ve çevre köyler. İşyeri: Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C. Randevu için arayın veya WhatsApp yazın; petek sayısı ve adres bilgisi yeterli.</p>
 
-        <p style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
-          <a class="btn btn--ember" href="tel:05070326576">Hemen ara</a>
-          <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba,%20petek%20temizli%C4%9Fi%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a class="btn btn--outline" href="/">Ana sayfa</a>
-        </p>
+        <div class="cta-panel">
+          <h2>Petek temizliği randevusu</h2>
+          <p>Turgutlu’da yerinde keşif ve temizlik için hemen ulaşın.</p>
+          <div class="cta-panel__actions">
+            <a class="btn btn--ember" href="tel:05070326576">0507 032 65 76</a>
+            <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba,%20petek%20temizli%C4%9Fi%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -112,6 +138,10 @@
     </div>
   </footer>
   <a class="fab-wa" href="https://wa.me/905070326576?text=Merhaba,%20petek%20temizli%C4%9Fi%20i%C3%A7in%20bilgi%20alabilir%20miyim?" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20zm4.7-5.9c-.3-.1-1.5-.8-1.8-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.2-.5 0-.2 0-.3-.1-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 2.6 1.1 2.6.7 3.1.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg></a>
+  <div class="sticky-cta" role="navigation" aria-label="Hızlı iletişim">
+    <a class="sticky-cta__wa" href="https://wa.me/905070326576?text=Merhaba,%20petek%20temizli%C4%9Fi%20istiyorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20zm4.7-5.9c-.3-.1-1.5-.8-1.8-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.6l.5-.6c.1-.2.2-.3.2-.5 0-.2 0-.3-.1-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 2.6 1.1 2.6.7 3.1.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>WhatsApp</a>
+    <a class="sticky-cta__call" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Hemen Ara</a>
+  </div>
   <script src="/js/site.js" defer></script>
 </body>
 </html>

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://turgutlukombiservisi.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://turgutlukombiservisi.com/assets/hero.jpg</image:loc>
+      <image:title>Atalan Teknik — Turgutlu Kombi Servisi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://turgutlukombiservisi.com/assets/og-cover.svg</image:loc>
+      <image:title>Turgutlu Kombi Servisi OG</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://turgutlukombiservisi.com/hizmetler/kombi-tamiri.html</loc>
@@ -24,5 +33,50 @@
     <loc>https://turgutlukombiservisi.com/hizmetler/petek-temizligi.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/markalar/demirdokum.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/markalar/eca.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/markalar/baymak.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/markalar/vaillant.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/markalar/bosch.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/markalar/buderus.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/assets/favicon.svg</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/assets/hero.jpg</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://turgutlukombiservisi.com/assets/og-cover.svg</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
