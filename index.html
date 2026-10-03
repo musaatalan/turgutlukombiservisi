@@ -39,18 +39,22 @@
   <meta property="og:title" content="Turgutlu Kombi Servisi | Atalan Teknik">
   <meta property="og:description" content="Turgutlu’da yerinde kombi tamiri, bakım ve petek temizliği. Atalan Teknik — 0507 032 65 76.">
   <meta property="og:site_name" content="Atalan Teknik — Turgutlu Kombi Servisi">
-  <meta property="og:image" content="https://turgutlukombiservisi.com/assets/og-cover.svg">
+  <meta property="og:image" content="https://turgutlukombiservisi.com/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Atalan Teknik — Turgutlu Kombi Servisi, 0507 032 65 76">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Turgutlu Kombi Servisi | Atalan Teknik">
   <meta name="twitter:description" content="Yılmazlar Mah. Türkoğlu Sk. 3/C — Turgutlu içi kombi servisi. 0507 032 65 76">
-  <meta name="twitter:image" content="https://turgutlukombiservisi.com/assets/og-cover.svg">
+  <meta name="twitter:image" content="https://turgutlukombiservisi.com/assets/og-cover.jpg">
 
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="preload" as="image" type="image/webp" href="/assets/hero-800.webp" imagesrcset="/assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w" imagesizes="(min-width: 900px) 560px, 100vw" fetchpriority="high">
   <link rel="stylesheet" href="/css/site.css">
   <script>document.documentElement.classList.add("js");</script>
 
@@ -87,7 +91,7 @@
         "url": "https://turgutlukombiservisi.com/",
         "telephone": "+905070326576",
         "email": "turgutlukombiservisi@gmail.com",
-        "image": "https://turgutlukombiservisi.com/assets/og-cover.svg",
+        "image": "https://turgutlukombiservisi.com/assets/og-cover.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Yılmazlar Mahallesi, Türkoğlu Sokak No: 3/C",
@@ -137,7 +141,7 @@
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acil kombi servisi", "url": "https://turgutlukombiservisi.com/hizmetler/acil-kombi-servisi.html" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kombi periyodik bakımı", "url": "https://turgutlukombiservisi.com/hizmetler/kombi-bakimi.html" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Petek ve tesisat temizliği", "url": "https://turgutlukombiservisi.com/hizmetler/petek-temizligi.html" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kombi montajı ve değişimi" } }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kombi montajı ve değişimi", "url": "https://turgutlukombiservisi.com/hizmetler/kombi-montaji.html" } }
           ]
         },
         "hasMap": "https://share.google/AqetKIsIIpf2KRmC7",
@@ -250,6 +254,7 @@
         <li><a href="#ariza-kodlari">Arıza kodları</a></li>
         <li><a href="#surec">Süreç</a></li>
         <li><a href="#neden-biz">Neden biz</a></li>
+        <li><a href="/rehber/">Rehber</a></li>
         <li><a href="#sss">SSS</a></li>
         <li><a href="#iletisim">İletişim</a></li>
       </ul>
@@ -271,6 +276,7 @@
           <a href="#ariza-kodlari">Arıza kodları</a>
           <a href="#surec">Süreç</a>
           <a href="#neden-biz">Neden biz</a>
+          <a href="/rehber/">Rehber</a>
           <a href="#sss">SSS</a>
           <a href="#iletisim">İletişim</a>
           <a href="tel:05070326576">0507 032 65 76</a>
@@ -298,7 +304,10 @@
           </a>
         </div>
         <figure class="hero__photo" style="margin:0;">
-          <img src="/assets/hero.jpg" alt="Turgutlu kombi servisi teknisyeni yerinde arıza tespiti yapıyor" width="1200" height="900" fetchpriority="high">
+          <picture>
+            <source type="image/webp" srcset="/assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w" sizes="(min-width: 900px) 560px, 100vw">
+            <img src="/assets/hero.jpg" alt="Turgutlu kombi servisi teknisyeni yerinde arıza tespiti yapıyor" width="1200" height="801" fetchpriority="high" decoding="async">
+          </picture>
           <figcaption class="hero__badge">Aynı gün yerinde servis<span>Yılmazlar Mah. · 0507 032 65 76</span></figcaption>
         </figure>
       </div>
@@ -345,14 +354,14 @@
             <p>Soğuk kalan petekler ve tıkanmış tesisatta makineli / ilaçlı temizlik.</p>
             <span class="service-item__link">Detay →</span>
           </a>
-          <div class="service-item" role="listitem">
+          <a class="service-item" href="/hizmetler/kombi-montaji.html">
             <div class="service-item__top">
               <span class="service-item__num">05</span>
               <h3>Kombi montaj &amp; değişim</h3>
             </div>
             <p>Yeni kombi montajı, eski cihaz sökümü ve güvenli devreye alma.</p>
-            <span class="service-item__link"><a href="tel:05070326576">Teklif al</a></span>
-          </div>
+            <span class="service-item__link">Detay →</span>
+          </a>
           <div class="service-item" role="listitem">
             <div class="service-item__top">
               <span class="service-item__num">06</span>
@@ -387,6 +396,8 @@
             <button type="button" class="fault-chip" data-brand="Bosch" aria-pressed="false">Bosch</button>
             <button type="button" class="fault-chip" data-brand="Buderus" aria-pressed="false">Buderus</button>
             <button type="button" class="fault-chip" data-brand="Vaillant" aria-pressed="false">Vaillant</button>
+            <button type="button" class="fault-chip" data-brand="Viessmann" aria-pressed="false">Viessmann</button>
+            <button type="button" class="fault-chip" data-brand="Ariston" aria-pressed="false">Ariston</button>
             <button type="button" class="fault-chip" data-brand="Protherm" aria-pressed="false">Protherm</button>
             <button type="button" class="fault-chip" data-brand="Warmhaus" aria-pressed="false">Warmhaus</button>
           </div>
@@ -798,6 +809,92 @@
             </div>
           </article>
           <a class="fault-brandlink" data-brand="Vaillant" href="/markalar/vaillant.html">Tüm Vaillant Modelleri ve Detaylı Servis Bilgisi İçin Tıklayın →</a>
+          <article class="fault-card" data-brand="Viessmann" data-search="viessmann f4 alev sinyali yok ateşleme sonrası alev algılanmadı; gaz beslemesi, ateşleme elektrodu veya iyonizasyon kaynaklı olabilir.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Viessmann</span>
+              <span class="fault-card__code">F4</span>
+            </div>
+            <h3>Alev Sinyali Yok</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <button type="button" class="fault-card__toggle" aria-expanded="false">Neden ve çözüm</button>
+            <div class="fault-card__body">
+              <p class="fault-card__label">Muhtemel neden</p>
+              <p>Ateşleme sonrası alev algılanmadı; gaz beslemesi, ateşleme elektrodu veya iyonizasyon kaynaklı olabilir.</p>
+              <div class="fault-card__diy">
+                <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+                <p>Gaz vanasının açık olduğunu kontrol edip reset tuşuna basın. Birkaç denemede düzelmezse servis çağırın.</p>
+              </div>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Viessmann%20kombimde%20F4%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <a class="fault-brandlink" data-brand="Viessmann" href="/markalar/viessmann.html">Tüm Viessmann Modelleri ve Detaylı Servis Bilgisi İçin Tıklayın →</a>
+          <article class="fault-card" data-brand="Ariston" data-search="ariston 501 alev algılanamadı / ateşleme hatası brülörde alev oluşmuyor veya iyonizasyon elektrodu alevi algılamıyor; gaz beslemesi kesik olabilir.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Ariston</span>
+              <span class="fault-card__code">501</span>
+            </div>
+            <h3>Alev Algılanamadı / Ateşleme Hatası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <button type="button" class="fault-card__toggle" aria-expanded="false">Neden ve çözüm</button>
+            <div class="fault-card__body">
+              <p class="fault-card__label">Muhtemel neden</p>
+              <p>Brülörde alev oluşmuyor veya iyonizasyon elektrodu alevi algılamıyor; gaz beslemesi kesik olabilir.</p>
+              <div class="fault-card__diy">
+                <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+                <p>Gaz vanasının açık olduğunu ve ocakta gaz geldiğini kontrol edin, ardından Reset tuşuna basın. Tekrarlıyorsa servis çağırın.</p>
+              </div>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Ariston%20kombimde%20501%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Ariston" data-search="ariston 108 düşük tesisat basıncı tesisattaki su basıncı yetersiz; kombi kendini korumaya aldı.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Ariston</span>
+              <span class="fault-card__code">108</span>
+            </div>
+            <h3>Düşük Tesisat Basıncı</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <button type="button" class="fault-card__toggle" aria-expanded="false">Neden ve çözüm</button>
+            <div class="fault-card__body">
+              <p class="fault-card__label">Muhtemel neden</p>
+              <p>Tesisattaki su basıncı yetersiz; kombi kendini korumaya aldı.</p>
+              <div class="fault-card__diy">
+                <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+                <p>Kombinin altındaki doldurma musluğuyla basıncı 1–1.5 bar arasına getirin ve musluğu kapatın.</p>
+              </div>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Ariston%20kombimde%20108%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Ariston" data-search="ariston 101 aşırı isınma kombi suyu aşırı ısınmış; sirkülasyon zayıf, pompa sıkışmış veya petek vanaları kapalı olabilir.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Ariston</span>
+              <span class="fault-card__code">101</span>
+            </div>
+            <h3>Aşırı Isınma</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <button type="button" class="fault-card__toggle" aria-expanded="false">Neden ve çözüm</button>
+            <div class="fault-card__body">
+              <p class="fault-card__label">Muhtemel neden</p>
+              <p>Kombi suyu aşırı ısınmış; sirkülasyon zayıf, pompa sıkışmış veya petek vanaları kapalı olabilir.</p>
+              <div class="fault-card__diy">
+                <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+                <p>Petek vanalarının açık olduğunu kontrol edin, cihazın soğumasını bekleyip resetleyin. Tekrarlıyorsa pompa kontrolü gerekir.</p>
+              </div>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Ariston%20kombimde%20101%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <a class="fault-brandlink" data-brand="Ariston" href="/markalar/ariston.html">Tüm Ariston Modelleri ve Detaylı Servis Bilgisi İçin Tıklayın →</a>
           <article class="fault-card" data-brand="Protherm" data-search="protherm f10 düşük su basıncı sistem basıncı 0.6 bar altına indi.">
             <div class="fault-card__top">
               <span class="fault-card__brand">Protherm</span>
@@ -840,6 +937,7 @@
               <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Protherm%20kombimde%20F1%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
             </div>
           </article>
+          <a class="fault-brandlink" data-brand="Protherm" href="/markalar/protherm.html">Tüm Protherm Modelleri ve Detaylı Servis Bilgisi İçin Tıklayın →</a>
           <article class="fault-card" data-brand="Warmhaus" data-search="warmhaus e02 düşük tesisat basıncı sistemde su eksik.">
             <div class="fault-card__top">
               <span class="fault-card__brand">Warmhaus</span>
@@ -882,6 +980,7 @@
               <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Warmhaus%20kombimde%20E01%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
             </div>
           </article>
+          <a class="fault-brandlink" data-brand="Warmhaus" href="/markalar/warmhaus.html">Tüm Warmhaus Modelleri ve Detaylı Servis Bilgisi İçin Tıklayın →</a>
         </div>
 
         <button type="button" class="fault-more" id="fault-more" hidden></button>
@@ -914,16 +1013,17 @@
         </div>
         <div class="brand-strip reveal" aria-label="Kombi markaları">
           <a href="/markalar/vaillant.html">Vaillant</a>
-          <span>Viessmann</span>
+          <a href="/markalar/viessmann.html">Viessmann</a>
           <a href="/markalar/bosch.html">Bosch</a>
           <a href="/markalar/buderus.html">Buderus</a>
           <a href="/markalar/baymak.html">Baymak</a>
           <a href="/markalar/eca.html">E.C.A.</a>
           <a href="/markalar/demirdokum.html">Demirdöküm</a>
-          <span>Ariston</span>
-          <span>Alarko</span>
-          <span>Airfel</span>
-          <span>Protherm</span>
+          <a href="/markalar/ariston.html">Ariston</a>
+          <a href="/markalar/alarko.html">Alarko</a>
+          <a href="/markalar/airfel.html">Airfel</a>
+          <a href="/markalar/protherm.html">Protherm</a>
+          <a href="/markalar/warmhaus.html">Warmhaus</a>
           <span>Daikin</span>
         </div>
       </div>
@@ -1059,6 +1159,39 @@
       </div>
     </section>
 
+    <section id="rehber" class="section section--guides">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Kombi rehberi</span>
+          <h2 class="section__title">Sık karşılaşılan sorunlar</h2>
+          <p class="section__text">Servis çağırmadan önce evde güvenle kontrol edebilecekleriniz.</p>
+        </div>
+        <div class="guide-grid reveal">
+          <a class="guide-card" href="/rehber/kombi-basinci-neden-duser.html">
+            <h3>Kombi basıncı neden düşer?</h3>
+            <p>Basınç ibresi sık sık 1 barın altına iniyorsa sebebi genellikle bir kaçak veya genleşme tankıdır. Evde yapabilecekleriniz ve ne zaman servis çağırmanız gerektiği.</p>
+            <span class="guide-card__more">Rehberi oku →</span>
+          </a>
+          <a class="guide-card" href="/rehber/petekler-neden-isinmiyor.html">
+            <h3>Petekler neden ısınmıyor?</h3>
+            <p>Peteğin hangi kısmının soğuk kaldığı, sorunun kaynağını büyük ölçüde gösterir. Belirtiye göre olası nedenler ve evde yapılabilecekler.</p>
+            <span class="guide-card__more">Rehberi oku →</span>
+          </a>
+          <a class="guide-card" href="/rehber/kombi-sicak-su-vermiyor.html">
+            <h3>Kombi sıcak su vermiyor mu?</h3>
+            <p>Kalorifer çalışıp sıcak su gelmiyorsa ya da su ılık akıyorsa sebep çoğu zaman akış sensörü, üç yollu vana veya kireçlenmiş eşanjördür.</p>
+            <span class="guide-card__more">Rehberi oku →</span>
+          </a>
+          <a class="guide-card" href="/rehber/kombi-su-akitiyor.html">
+            <h3>Kombi su akıtıyor mu?</h3>
+            <p>Kombinin altında su birikmesi emniyet ventili, yoğuşma gideri veya bir contadan kaynaklanabilir. Güvenli şekilde neler yapabileceğiniz.</p>
+            <span class="guide-card__more">Rehberi oku →</span>
+          </a>
+        </div>
+        <p style="margin:1.5rem 0 0;"><a class="guide-card__more" href="/rehber/">Tüm rehber yazıları →</a></p>
+      </div>
+    </section>
+
     <section id="iletisim" class="section section--alt">
       <div class="wrap">
         <div class="section__head reveal">
@@ -1156,14 +1289,13 @@
       <div class="footer__top">
         <a class="footer__brand" href="/">Atalan Teknik</a>
         <nav class="footer__nav" aria-label="Alt bağlantılar">
-          <a href="#hizmetler">Hizmetler</a>
           <a href="/hizmetler/kombi-tamiri.html">Kombi tamiri</a>
           <a href="/hizmetler/acil-kombi-servisi.html">Acil servis</a>
           <a href="/hizmetler/kombi-bakimi.html">Bakım</a>
           <a href="/hizmetler/petek-temizligi.html">Petek temizliği</a>
-          <a href="/markalar/demirdokum.html">Demirdöküm</a>
-          <a href="/markalar/vaillant.html">Vaillant</a>
+          <a href="/hizmetler/kombi-montaji.html">Kombi montajı</a>
           <a href="#ariza-kodlari">Arıza kodları</a>
+          <a href="/rehber/">Kombi rehberi</a>
           <a href="#servis-bolgeleri">Servis bölgeleri</a>
           <a href="#iletisim">İletişim</a>
         </nav>
