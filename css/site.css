@@ -446,6 +446,35 @@ a:hover {
   animation: rise 0.9s var(--ease) 0.24s both;
 }
 
+.hero__trust {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  padding: 0.5rem 0.85rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.86rem;
+  color: #475569;
+  text-decoration: none;
+}
+
+.hero__trust:hover {
+  border-color: #c3cad6;
+  color: #0f172a;
+}
+
+.hero__trust strong {
+  color: #0f172a;
+}
+
+.hero__stars {
+  color: #f59e0b;
+  letter-spacing: 0.05em;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
