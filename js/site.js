@@ -38,6 +38,54 @@
     });
   }
 
+  var faultGrid = document.getElementById("fault-grid");
+  if (faultGrid) {
+    var faultSearch = document.getElementById("fault-search");
+    var faultEmpty = document.getElementById("fault-empty");
+    var chips = document.querySelectorAll(".fault-chip");
+    var cards = faultGrid.querySelectorAll(".fault-card");
+    var activeBrand = "Tümü";
+
+    function norm(s) {
+      return s
+        .toLocaleLowerCase("tr")
+        .normalize("NFD")
+        .replace(/\u0307/g, "")
+        .replace(/ı/g, "i");
+    }
+
+    cards.forEach(function (card) {
+      card.dataset.search = norm(card.dataset.search);
+    });
+
+    function applyFaultFilter() {
+      var q = faultSearch ? norm(faultSearch.value.trim()) : "";
+      var visible = 0;
+      cards.forEach(function (card) {
+        var brandOk = activeBrand === "Tümü" || card.dataset.brand === activeBrand;
+        var searchOk = !q || card.dataset.search.indexOf(q) !== -1;
+        var show = brandOk && searchOk;
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      if (faultEmpty) faultEmpty.hidden = visible > 0;
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        activeBrand = chip.dataset.brand;
+        chips.forEach(function (c) {
+          var on = c === chip;
+          c.classList.toggle("is-active", on);
+          c.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        applyFaultFilter();
+      });
+    });
+
+    if (faultSearch) faultSearch.addEventListener("input", applyFaultFilter);
+  }
+
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(
       function (entries) {

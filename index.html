@@ -187,6 +187,7 @@
 
       <ul class="nav__links">
         <li><a href="#hizmetler">Hizmetler</a></li>
+        <li><a href="#ariza-kodlari">Arıza kodları</a></li>
         <li><a href="#surec">Süreç</a></li>
         <li><a href="#neden-biz">Neden biz</a></li>
         <li><a href="#sss">SSS</a></li>
@@ -207,6 +208,7 @@
       <div class="wrap">
         <nav aria-label="Mobil menü">
           <a href="#hizmetler">Hizmetler</a>
+          <a href="#ariza-kodlari">Arıza kodları</a>
           <a href="#surec">Süreç</a>
           <a href="#neden-biz">Neden biz</a>
           <a href="#sss">SSS</a>
@@ -221,14 +223,20 @@
     <section class="hero" aria-labelledby="hero-brand">
       <div class="hero__media" aria-hidden="true"></div>
       <div class="hero__glow" aria-hidden="true"></div>
-      <div class="hero__inner">
-        <p id="hero-brand" class="hero__brand">Atalan Teknik</p>
-        <h1 class="hero__title">Turgutlu içi kombi servisi</h1>
-        <p class="hero__lead">Kombi tamiri, bakım ve petek temizliği — yerinde, net fiyat, hızlı müdahale.</p>
-        <div class="hero__actions">
-          <a class="btn btn--ember" href="tel:05070326576">Hemen ara</a>
-          <a class="btn btn--ghost" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20servisi%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <div class="hero__inner hero__grid">
+        <div>
+          <p id="hero-brand" class="hero__brand">Atalan Teknik</p>
+          <h1 class="hero__title">Turgutlu içi kombi servisi</h1>
+          <p class="hero__lead">Kombi tamiri, bakım ve petek temizliği — yerinde, net fiyat, hızlı müdahale.</p>
+          <div class="hero__actions">
+            <a class="btn btn--ember" href="tel:05070326576">Hemen ara</a>
+            <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba,%20kombi%20servisi%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
         </div>
+        <figure class="hero__photo" style="margin:0;">
+          <img src="/assets/hero.jpg" alt="Turgutlu kombi servisi teknisyeni yerinde arıza tespiti yapıyor" width="1200" height="900" fetchpriority="high">
+          <figcaption class="hero__badge">Aynı gün yerinde servis<span>Yılmazlar Mah. · 0507 032 65 76</span></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -288,6 +296,487 @@
             </div>
             <p>Gazlı ve elektrikli sıcak su cihazlarında arıza ve güvenlik kontrolleri.</p>
             <span class="service-item__link"><a href="tel:05070326576">Ara</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ariza-kodlari" class="section section--fault">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Turgutlu arıza tespit rehberi</span>
+          <h2 class="section__title">Kombi arıza kodları ve hızlı çözümler</h2>
+          <p class="section__text">Ekrandaki hata kodunun anlamına bakın, evde uygulayabileceğiniz basit adımları deneyin. Çözülmezse Turgutlu içi teknik ekibimizi arayın.</p>
+        </div>
+
+        <div class="fault-toolbar reveal">
+          <label class="fault-search">
+            <span class="visually-hidden">Arıza kodu veya marka ara</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+            <input type="search" id="fault-search" placeholder="Arıza kodu veya marka arayın (Örn: F10, E01, ateşleme, Bosch...)" autocomplete="off">
+          </label>
+          <div class="fault-chips" role="group" aria-label="Markaya göre filtrele">
+            <button type="button" class="fault-chip is-active" data-brand="Tümü" aria-pressed="true">Tümü</button>
+            <button type="button" class="fault-chip" data-brand="Demirdöküm" aria-pressed="false">Demirdöküm</button>
+            <button type="button" class="fault-chip" data-brand="E.C.A." aria-pressed="false">E.C.A.</button>
+            <button type="button" class="fault-chip" data-brand="Baymak" aria-pressed="false">Baymak</button>
+            <button type="button" class="fault-chip" data-brand="Bosch" aria-pressed="false">Bosch</button>
+            <button type="button" class="fault-chip" data-brand="Buderus" aria-pressed="false">Buderus</button>
+            <button type="button" class="fault-chip" data-brand="Vaillant" aria-pressed="false">Vaillant</button>
+            <button type="button" class="fault-chip" data-brand="Protherm" aria-pressed="false">Protherm</button>
+            <button type="button" class="fault-chip" data-brand="Warmhaus" aria-pressed="false">Warmhaus</button>
+          </div>
+        </div>
+
+        <div class="fault-grid" id="fault-grid">
+          <article class="fault-card" data-brand="Demirdöküm" data-search="demirdöküm f10 düşük su basıncı tesisat su basıncının 0.8 bar altına düşmesi.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Demirdöküm</span>
+              <span class="fault-card__code">F10</span>
+            </div>
+            <h3>Düşük Su Basıncı</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Tesisat su basıncının 0.8 bar altına düşmesi.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Kombinin altındaki siyah veya mavi doldurma musluğunu sola çevirerek ibreyi 1.5 bara getirin ve kapatın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Demird%C3%B6k%C3%BCm%20kombimde%20F10%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Demirdöküm" data-search="demirdöküm f04 / f01 ateşleme / gaz besleme arızası cihaza gaz ulaşmıyor veya iyonizasyon elektrodu alevi algılamıyor.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Demirdöküm</span>
+              <span class="fault-card__code">F04 / F01</span>
+            </div>
+            <h3>Ateşleme / Gaz Besleme Arızası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Cihaza gaz ulaşmıyor veya iyonizasyon elektrodu alevi algılamıyor.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Ocağınızda gaz olup olmadığını kontrol edin, kombi yanındaki sarı gaz vanasını açın ve &#x27;R&#x27; tuşuna 3 saniye basarak resetleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Demird%C3%B6k%C3%BCm%20kombimde%20F04%20/%20F01%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Demirdöküm" data-search="demirdöküm f05 / f5 hava akış (prosestat / fan) hatası baca borusu çıkmış, tıkanmış veya fan motoru/prosestat arızalanmış.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Demirdöküm</span>
+              <span class="fault-card__code">F05 / F5</span>
+            </div>
+            <h3>Hava Akış (Prosestat / Fan) Hatası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Baca borusu çıkmış, tıkanmış veya fan motoru/prosestat arızalanmış.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Dış baca borusunun tıkalı veya yerinden oynamış olup olmadığını gözle kontrol edin. Cihazı resetleyin. Düzelmezse açmayın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Demird%C3%B6k%C3%BCm%20kombimde%20F05%20/%20F5%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Demirdöküm" data-search="demirdöküm f02 kullanım suyu ntc hatası sıcak su sensörü arızalı veya temassızlık var.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Demirdöküm</span>
+              <span class="fault-card__code">F02</span>
+            </div>
+            <h3>Kullanım Suyu NTC Hatası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Sıcak su sensörü arızalı veya temassızlık var.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Cihazı kapatıp açın. Sorun devam ederse teknik sensör değişimi gereklidir.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Demird%C3%B6k%C3%BCm%20kombimde%20F02%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="E.C.A." data-search="e.c.a. e01 alev yok / gaz kesintisi brülörde alev oluşmuyor ya da alev elektrot tarafından görülmüyor.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">E.C.A.</span>
+              <span class="fault-card__code">E01</span>
+            </div>
+            <h3>Alev Yok / Gaz Kesintisi</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Brülörde alev oluşmuyor ya da alev elektrot tarafından görülmüyor.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Gaz sayacınızın açık olduğundan ve kombi gaz vanasının açık olduğundan emin olun. 3 defa resetleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20E.C.A.%20kombimde%20E01%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="E.C.A." data-search="e.c.a. e03 aşırı sıcaklık koruması (limit termostat) kombi suyu aşırı ısınmış, pompa basmıyor veya petek vanaları kapalı.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">E.C.A.</span>
+              <span class="fault-card__code">E03</span>
+            </div>
+            <h3>Aşırı Sıcaklık Koruması (Limit Termostat)</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Kombi suyu aşırı ısınmış, pompa basmıyor veya petek vanaları kapalı.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Radyatör vanalarınızdan en az 3 tanesinin açık olduğunu teyit edin. 15 dk soğumasını bekleyip resetleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20E.C.A.%20kombimde%20E03%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="E.C.A." data-search="e.c.a. e02 düşük tesisat basıncı sistem su basıncı yetersiz.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">E.C.A.</span>
+              <span class="fault-card__code">E02</span>
+            </div>
+            <h3>Düşük Tesisat Basıncı</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Sistem su basıncı yetersiz.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Alt doldurma musluğuyla suyu 1.5 bar seviyesine tamamlayın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20E.C.A.%20kombimde%20E02%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="E.C.A." data-search="e.c.a. e04 / e05 hava tahliye arızası diferansiyel hava basınç anahtarı veya baca çekiş problemi.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">E.C.A.</span>
+              <span class="fault-card__code">E04 / E05</span>
+            </div>
+            <h3>Hava Tahliye Arızası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Diferansiyel hava basınç anahtarı veya baca çekiş problemi.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Baca ağzını kontrol edin. Resetleme sonrası düzelmezse fan bakımı gerekir.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20E.C.A.%20kombimde%20E04%20/%20E05%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Baymak" data-search="baymak e01 gaz yokluğu / ateşleme hatası gaz giriş basıncı düşük ya da gaz valfi arızası.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Baymak</span>
+              <span class="fault-card__code">E01</span>
+            </div>
+            <h3>Gaz Yokluğu / Ateşleme Hatası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Gaz giriş basıncı düşük ya da gaz valfi arızası.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Daire gaz vanalarını kontrol edin, 3 saniye &#x27;R&#x27; tuşuna basılı tutarak reset deneyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Baymak%20kombimde%20E01%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Baymak" data-search="baymak e10 tesisat basınç düşüklüğü tesisat suyu bitmiş veya sensör arızalı.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Baymak</span>
+              <span class="fault-card__code">E10</span>
+            </div>
+            <h3>Tesisat Basınç Düşüklüğü</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Tesisat suyu bitmiş veya sensör arızalı.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Alttaki mavi doldurma musluğunu açarak ibreyi 1.5 bara yükseltin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Baymak%20kombimde%20E10%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Baymak" data-search="baymak e03 / e25 aşırı isınma / pompa blokajı devirdaim pompası kilitlenmiş ya da filtreler aşırı tıkalı.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Baymak</span>
+              <span class="fault-card__code">E03 / E25</span>
+            </div>
+            <h3>Aşırı Isınma / Pompa Blokajı</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Devirdaim pompası kilitlenmiş ya da filtreler aşırı tıkalı.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Petek vanalarını kontrol edin. Cihaz soğuyunca reset atın, devam ederse pompa kontrolü gerekir.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Baymak%20kombimde%20E03%20/%20E25%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Baymak" data-search="baymak e05 kalorifer gidiş sensörü hatası isıtma devresi ntc sensör arızası veya kablo kopukluğu.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Baymak</span>
+              <span class="fault-card__code">E05</span>
+            </div>
+            <h3>Kalorifer Gidiş Sensörü Hatası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Isıtma devresi NTC sensör arızası veya kablo kopukluğu.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Teknik müdahale ile sensör yenilenmelidir.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Baymak%20kombimde%20E05%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Bosch" data-search="bosch ea alev algılanmadı gaz gelmiyor, ateşleme trafosu veya anakart arızası.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Bosch</span>
+              <span class="fault-card__code">EA</span>
+            </div>
+            <h3>Alev Algılanmadı</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Gaz gelmiyor, ateşleme trafosu veya anakart arızası.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Gaz vanasını kontrol edin. &#x27;Reset&#x27; butonuna ekranda &#x27;16&#x27; ve sonra &#x27;Reset&#x27; yazısı çıkana kadar basın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Bosch%20kombimde%20EA%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Bosch" data-search="bosch c6 / c4 fan / prosestat hatası fan çalışmıyor, devri düşük ya da diferansiyel basınç anahtarı temassız.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Bosch</span>
+              <span class="fault-card__code">C6 / C4</span>
+            </div>
+            <h3>Fan / Prosestat Hatası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Fan çalışmıyor, devri düşük ya da diferansiyel basınç anahtarı temassız.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Bacada rüzgar ters tepmesi veya yabancı cisim kontrolü yapın, ardından resetleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Bosch%20kombimde%20C6%20/%20C4%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Bosch" data-search="bosch ce / 2970 düşük su basıncı basınç 1 barın altına inmiş.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Bosch</span>
+              <span class="fault-card__code">CE / 2970</span>
+            </div>
+            <h3>Düşük Su Basıncı</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Basınç 1 barın altına inmiş.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Kombinin altındaki siyah vidayı sola çevirip ekrandaki barı 1.5 seviyesine çıkarın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Bosch%20kombimde%20CE%20/%202970%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Buderus" data-search="buderus 6a ateşleme arızası brülör yanmıyor veya iyonizasyon arızalı.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Buderus</span>
+              <span class="fault-card__code">6A</span>
+            </div>
+            <h3>Ateşleme Arızası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Brülör yanmıyor veya iyonizasyon arızalı.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Ocakta gazı test edin, gaz kolunun hatta paralel olduğunu kontrol edip resetleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Buderus%20kombimde%206A%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Buderus" data-search="buderus 3c / 3a diferansiyel basınç arızası hava tahliye / fan devresi hatası.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Buderus</span>
+              <span class="fault-card__code">3C / 3A</span>
+            </div>
+            <h3>Diferansiyel Basınç Arızası</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Hava tahliye / fan devresi hatası.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Reset deneyin. Sorun devam ederse teknisyene başvurun.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Buderus%20kombimde%203C%20/%203A%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Vaillant" data-search="vaillant f.28 / f.29 gaz yokluğu / alev sönmesi kombi ilk çalıştırmada alev almadı veya çalışma esnasında söndü.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Vaillant</span>
+              <span class="fault-card__code">F.28 / F.29</span>
+            </div>
+            <h3>Gaz Yokluğu / Alev Sönmesi</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Kombi ilk çalıştırmada alev almadı veya çalışma esnasında söndü.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Gaz vanasını açın, alev simgesi üzerindeki çarpı işaretli reset düğmesine basın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Vaillant%20kombimde%20F.28%20/%20F.29%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Vaillant" data-search="vaillant f.22 kuru yanma / yetersiz su cihazda su kalmamış.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Vaillant</span>
+              <span class="fault-card__code">F.22</span>
+            </div>
+            <h3>Kuru Yanma / Yetersiz Su</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Cihazda su kalmamış.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Kombi altındaki gri/mavi çevirme musluğuyla barı 1.5&#x27;e tamamlayın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Vaillant%20kombimde%20F.22%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Vaillant" data-search="vaillant f.20 aşırı isınma emniyeti su sıcaklığı 97°c üzerine çıkmış.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Vaillant</span>
+              <span class="fault-card__code">F.20</span>
+            </div>
+            <h3>Aşırı Isınma Emniyeti</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Su sıcaklığı 97°C üzerine çıkmış.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Tesisat vanalarını açın, 20 dk bekleyip resetleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Vaillant%20kombimde%20F.20%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Protherm" data-search="protherm f10 düşük su basıncı sistem basıncı 0.6 bar altına indi.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Protherm</span>
+              <span class="fault-card__code">F10</span>
+            </div>
+            <h3>Düşük Su Basıncı</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Sistem basıncı 0.6 bar altına indi.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Doldurma musluğundan su ekleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Protherm%20kombimde%20F10%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Protherm" data-search="protherm f1 ateşleme emniyeti devrede gaz gelmiyor veya elektrot alevi okuyamıyor.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Protherm</span>
+              <span class="fault-card__code">F1</span>
+            </div>
+            <h3>Ateşleme Emniyeti Devrede</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Gaz gelmiyor veya elektrot alevi okuyamıyor.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Gaz vanasını kontrol edip resetleyin.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Protherm%20kombimde%20F1%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Warmhaus" data-search="warmhaus e02 düşük tesisat basıncı sistemde su eksik.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Warmhaus</span>
+              <span class="fault-card__code">E02</span>
+            </div>
+            <h3>Düşük Tesisat Basıncı</h3>
+            <span class="fault-card__tag fault-card__tag--diy">Evde çözülebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Sistemde su eksik.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Basınç vanasını sola çevirerek gösterge 1.5 bar olana kadar su basın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Warmhaus%20kombimde%20E02%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+          <article class="fault-card" data-brand="Warmhaus" data-search="warmhaus e01 gaz yokluğu gaz beslemesi yok.">
+            <div class="fault-card__top">
+              <span class="fault-card__brand">Warmhaus</span>
+              <span class="fault-card__code">E01</span>
+            </div>
+            <h3>Gaz Yokluğu</h3>
+            <span class="fault-card__tag fault-card__tag--service">Teknik servis gerekebilir</span>
+            <p class="fault-card__label">Muhtemel neden</p>
+            <p>Gaz beslemesi yok.</p>
+            <div class="fault-card__diy">
+              <p class="fault-card__label">Evde ne yapabilirsiniz?</p>
+              <p>Gaz vanasını açın ve Reset tuşuna basın.</p>
+            </div>
+            <div class="fault-card__actions">
+              <a class="btn btn--ember" href="tel:05070326576"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>Ustayı ara</a>
+              <a class="btn btn--wa" href="https://wa.me/905070326576?text=Merhaba%2C%20Warmhaus%20kombimde%20E01%20ar%C4%B1zas%C4%B1%20var.%20Turgutlu%27dan%20yaz%C4%B1yorum." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A9.9 9.9 0 1 0 12 2zm0 18a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 1 1 12 20z"/></svg>WhatsApp</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="fault-empty" id="fault-empty" hidden>
+          <p class="fault-empty__title">Aradığınız kod listede bulunamadı.</p>
+          <p>Nadir görülen veya kart kaynaklı arızalar için doğrudan Turgutlu servis hattımızdan destek alın.</p>
+          <a class="btn btn--ember" href="tel:05070326576">0507 032 65 76'yı ara</a>
+        </div>
+
+        <div class="fault-notes">
+          <div class="fault-note fault-note--warn">
+            <h3>Önemli güvenlik uyarısı</h3>
+            <p>Gaz kokusu alıyorsanız cihazı kesinlikle resetlemeyin, elektrik anahtarlarına dokunmayın ve derhal <strong>187 Doğalgaz Acil</strong> hattını arayın. Kombinin iç kapağını açmayın.</p>
+          </div>
+          <div class="fault-note fault-note--info">
+            <h3>Turgutlu aynı gün yerinde müdahale</h3>
+            <p>Selvilitepe, Ergenekon, Subaşı, Acarlar, Turan, İstasyon ve tüm çevre mahallelere gün içi servis sağlıyoruz.</p>
           </div>
         </div>
       </div>
