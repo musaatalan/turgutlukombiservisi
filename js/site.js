@@ -38,12 +38,26 @@
     });
   }
 
+  document.querySelectorAll(".fault-card__toggle").forEach(function (toggle) {
+    toggle.addEventListener("click", function () {
+      var card = toggle.closest(".fault-card");
+      var open = !card.classList.contains("is-open");
+      card.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+
   var faultGrid = document.getElementById("fault-grid");
   if (faultGrid) {
     var faultSearch = document.getElementById("fault-search");
     var faultEmpty = document.getElementById("fault-empty");
     var chips = document.querySelectorAll(".fault-chip");
     var cards = faultGrid.querySelectorAll(".fault-card");
+    var brandLinks = faultGrid.querySelectorAll(".fault-brandlink");
+    var faultMore = document.getElementById("fault-more");
+    var mobileMq = window.matchMedia("(max-width: 699px)");
+    var MOBILE_LIMIT = 6;
+    var showAll = false;
     var activeBrand = "Tümü";
 
     function norm(s) {
@@ -61,15 +75,41 @@
     function applyFaultFilter() {
       var q = faultSearch ? norm(faultSearch.value.trim()) : "";
       var visible = 0;
+      var visibleBrands = {};
+      var limited = 0;
+      var limitOn = mobileMq.matches && !showAll && activeBrand === "Tümü" && !q;
       cards.forEach(function (card) {
         var brandOk = activeBrand === "Tümü" || card.dataset.brand === activeBrand;
         var searchOk = !q || card.dataset.search.indexOf(q) !== -1;
         var show = brandOk && searchOk;
+        if (show && limitOn && visible >= MOBILE_LIMIT) {
+          show = false;
+          limited++;
+        }
         card.hidden = !show;
-        if (show) visible++;
+        if (show) {
+          visible++;
+          visibleBrands[card.dataset.brand] = true;
+        }
+      });
+      brandLinks.forEach(function (link) {
+        link.hidden = !visibleBrands[link.dataset.brand];
       });
       if (faultEmpty) faultEmpty.hidden = visible > 0;
+      if (faultMore) {
+        faultMore.hidden = limited === 0;
+        faultMore.textContent = "Tüm arıza kodlarını göster (" + limited + " kod daha)";
+      }
     }
+
+    if (faultMore) {
+      faultMore.addEventListener("click", function () {
+        showAll = true;
+        applyFaultFilter();
+      });
+    }
+    if (mobileMq.addEventListener) mobileMq.addEventListener("change", applyFaultFilter);
+    applyFaultFilter();
 
     chips.forEach(function (chip) {
       chip.addEventListener("click", function () {

@@ -522,8 +522,7 @@ a:hover {
 .service-item__top {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .service-item__num {
@@ -602,6 +601,55 @@ a:hover {
 
 .brand-strip > *:last-child::after {
   content: none;
+}
+
+@media (max-width: 699px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section__head {
+    margin-bottom: 1.75rem;
+  }
+
+  .section__title {
+    font-size: 1.7rem;
+  }
+
+  .section__text {
+    font-size: 0.98rem;
+  }
+
+  .service-item {
+    gap: 0.5rem;
+    padding: 1.2rem 0;
+  }
+
+  .service-item h3 {
+    font-size: 1.12rem;
+  }
+
+  .brand-strip {
+    gap: 0.5rem;
+    font-size: 0.92rem;
+  }
+
+  .brand-strip > * {
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--white);
+  }
+
+  .brand-strip a {
+    border-color: rgba(232, 90, 27, 0.4);
+    color: var(--ember-deep);
+  }
+
+  .brand-strip span::after,
+  .brand-strip a::after {
+    content: none;
+  }
 }
 
 /* Process */
@@ -1140,6 +1188,10 @@ a:hover {
   font-weight: 600;
 }
 
+.prose a.btn {
+  color: var(--white);
+}
+
 .page-hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -1542,6 +1594,177 @@ a:hover {
   width: 1rem;
   height: 1rem;
   fill: currentColor;
+}
+
+.fault-card__toggle {
+  display: none;
+}
+
+.fault-brandlink {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: -0.15rem 0 0.85rem;
+  padding: 0.85rem 1.1rem;
+  border: 1px dashed rgba(232, 90, 27, 0.45);
+  border-radius: 0.9rem;
+  background: rgba(232, 90, 27, 0.05);
+  color: var(--ember-deep);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.fault-brandlink:hover {
+  background: rgba(232, 90, 27, 0.1);
+  border-color: var(--ember);
+  color: var(--ember-deep);
+}
+
+.fault-brandlink[hidden] {
+  display: none;
+}
+
+.fault-grid--page {
+  margin: 1.25rem 0 2rem;
+}
+
+.fault-more {
+  display: block;
+  width: 100%;
+  margin-top: 0.85rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--white);
+  background: #0f172a;
+  border: 0;
+  border-radius: 0.85rem;
+  padding: 0.95rem 1rem;
+  cursor: pointer;
+}
+
+.fault-more[hidden] {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .fault-grid--page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 699px) {
+  .fault-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 -1rem;
+    padding: 0 1rem 0.25rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .fault-chips::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fault-chip {
+    flex: 0 0 auto;
+  }
+
+  .fault-toolbar {
+    padding: 0.85rem 1rem;
+    overflow: hidden;
+  }
+
+  .fault-search input {
+    font-size: 16px;
+  }
+
+  .fault-grid {
+    gap: 0.75rem;
+  }
+
+  .fault-card {
+    padding: 1rem;
+  }
+
+  .fault-card__top {
+    margin-bottom: 0.55rem;
+  }
+
+  .fault-card h3 {
+    font-size: 1.02rem;
+  }
+
+  .fault-card__tag {
+    margin-bottom: 0.6rem;
+  }
+
+  .js .fault-card__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--steel);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 0.65rem;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+  }
+
+  .js .fault-card__toggle::after {
+    content: "+";
+    font-size: 1.15rem;
+    line-height: 1;
+    color: var(--ember);
+  }
+
+  .js .fault-card.is-open .fault-card__toggle::after {
+    content: "−";
+  }
+
+  .js .fault-card:not(.is-open) .fault-card__body,
+  .js .fault-card:not(.is-open) .fault-card__actions {
+    display: none;
+  }
+
+  .js .fault-card:not(.is-open) .fault-card__toggle {
+    margin-bottom: 0;
+  }
+
+  .js .fault-grid--page .fault-card__toggle {
+    display: none;
+  }
+
+  .js .fault-grid--page .fault-card .fault-card__body {
+    display: block;
+  }
+
+  .js .fault-grid--page .fault-card .fault-card__actions {
+    display: flex;
+  }
+
+  .fault-card__actions {
+    padding-top: 0.75rem;
+  }
+
+  .fault-card__actions .btn {
+    padding: 0.7rem 0.6rem;
+  }
+
+  .fault-brandlink {
+    font-size: 0.86rem;
+    margin-bottom: 0.6rem;
+  }
 }
 
 .fault-empty {
